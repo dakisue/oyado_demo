@@ -1,84 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
-
-<head>
-
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<head> 
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
 <link rel="stylesheet" type="text/css">
-
 <title>oyado_demo</title>
-
 <!-- script type="text/javascript" src="../../js.js"></script -->
-
 <style type="text/css">
-
-<!--
-
-.style3 {
-
-	color: #003399;
-
-	font-size: 18px;
-
+.button-radio input[type="radio"] {
+  display:none; 
 }
 
-.style4 {font-size: 12px}
-	
-.radiobutton input {
-	display: none;
-}
-.radiobutton label{
-	display: block;
-	float: left;
-	cursor: pointer;
-	width: 20px;
-	margin: 0;
-	padding: 10px;
-	background: #bdc3c7;
-	color: #869198;
-	font-size: 16px;
-	text-align: center;
-	line-height: 1;
-	transition: .2s;
-}
-.radiobutton label:first-of-type{
-	border-radius: 3px 0 0 3px;
-}
-.radiobutton label:last-of-type{
-	border-radius: 0 3px 3px 0;
-}
-.radiobutton input[type="radio"]:checked + .qf_8fb11c {
-	background-color: #a1b91d;
-	color: #fff;
-}
-.radiobutton input[type="radio"]:checked + .qf_c0f8fc {
-	background-color: #e67168;
-	color: #fff;
+.button-radio label {
+  display:inline-block;
+  color:#fff;
+  background-color:#2780e3;
+  padding:5px 10px;
 }
 
-.radiobutton input[type="radio"]:checked + .qf_fb9cec {
-	background-color: #e67168;
-	color: #fff;
+.button-radio input[type="radio"]:checked + label { 
+  background-color:#000;
 }
-	
-.radiobutton input[type="radio"]:checked + .qf_34a9dc {
-	background-color: #e67168;
-	color: #fff;
-}
-	
-.radiobutton input[type="radio"]:checked + .qf_056c76 {
-	background-color: #e67168;
-	color: #fff;
-}
-
-.radiobutton input[type="radio"]:checked + .qf_285793 {
-	background-color: #e67168;
-	color: #fff;
-}
-	
-
--->
-
 </style>
 <!--ネンド用　-->
 <script type="text/javascript">
@@ -97,24 +38,39 @@ var nend_params = {"media":27480,"site":142445,"spot":385459,"type":2,"oriented"
         <td height="45" align="center" bgcolor="#ededed">
           <span class="style4">山梨県<br>
           河口湖温泉</span>
-	</td>
+        </td>
       </tr>
       <tr>
         <td align="center" bgcolor="#FFFFFF">
-        <a href="http://www.kankokeizai.com/pamphlet/maruei/omote.html" target="_blank">
-        <img src="image/maruei.jpg" alt="若草の宿丸栄" width="72" height="150" border="0"></a><br>
-	<div class="radiobutton" align="center" widh="100%">
-	<input class="Lnag-ja" value="ja" type="radio" id="qf_8fb11c" name="lang" checked="checked" /><label for="qf_8fb11c">日</label>
-	<input class="Lnag-en" value="en" type="radio" id="qf_c0f8fc" name="lang" /><label for="qf_c0f8fc">EN</label>
-        <input class="Lnag-ko" value="ko" type="radio" id="qf_fb9cec" name="lang" /><label for="qf_fb9cec">한</label>
-        <input class="Lnag-zh-Hant" value="zh-Hant" type="radio" id="qf_34a9dc" name="lang" /><label for="qf_34a9dc">繁</label>
-	<input class="Lnag-zh-Hans" value="zh-Hans" type="radio" id="qf_056c76" name="lang" /><label for="qf_056c76">簡</label>
-	<input class="Lnag-th" value="th" type="radio" id="qf_285793" name="lang" /><label for="qf_285793">ไทย</label>
-        </div>
-	<br>
-	<br>
-        <a href="http://www.maruei55.com/" target="_blank">若草の宿丸栄</a>
-	</td>
+           <table>
+            <tr>
+              <td>
+                <a href="http://www.kankokeizai.com/pamphlet/maruei/omote.html" target="_blank">
+                <img src="image/maruei.jpg" alt="若草の宿丸栄" width="72" height="150" border="0"></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="button-radio">
+                <input id="bar1" type="radio" name="foo" value="bar1" checked>
+                <label for="bar1">日</label>
+                <input id="bar2" type="radio" name="foo" value="bar2">
+                <label for="bar2">EN</label>
+                <input id="bar3" type="radio" name="foo" value="bar3">
+                <label for="bar3">繁</label>
+                <input id="bar4" type="radio" name="foo" value="bar4">
+                <label for="bar4">簡</label>
+                <input id="bar5" type="radio" name="foo" value="bar5">
+                <label for="bar5">？</label>
+               </div>                
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.maruei55.com/" target="_blank">若草の宿丸栄</a>
+              </td>
+            </tr>
+	    </td>
       </tr>
    </table>
    </td>
@@ -122,7 +78,3 @@ var nend_params = {"media":27480,"site":142445,"spot":385459,"type":2,"oriented"
 </table>
 </body>
 </html>
-
-
-  
-  
